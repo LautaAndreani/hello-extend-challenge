@@ -7,7 +7,12 @@ module.exports = {
     fontFamily: {
       default: ['Nunito Sans', ...theme.fontFamily.sans],
     },
-    extend: {},
+    extend: {
+      colors: {
+        red: '#EE4957',
+        brand: '#0794E3',
+      },
+    },
   },
   plugins: [],
 }
