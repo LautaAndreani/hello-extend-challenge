@@ -4,7 +4,7 @@ type Props = {
 }
 function Input({ handleSubmit, setInput }: Props) {
   return (
-    <form className='flex flex-wrap sm:flex-nowrap justify-between w-full mt-10' onSubmit={(e) => handleSubmit(e)}>
+    <form className='flex flex-wrap gap-2 sm:flex-nowrap justify-between w-full mt-10' onSubmit={(e) => handleSubmit(e)}>
       <input
         type='text'
         placeholder='Type a breed'
@@ -14,7 +14,7 @@ function Input({ handleSubmit, setInput }: Props) {
       />
       <button
         type='submit'
-        className='flex min-w-full justify-center items-center gap-2 bg-brand py-2 px-4 rounded-md text-white sm:min-w-[6rem]'
+        className='flex min-w-full justify-center items-center gap-2 bg-brand py-2 px-4 rounded-md text-white sm:min-w-[6rem] hover:bg-hover transition'
       >
         <img src='/search-icon.svg' alt='search icon' className='w-4' />
         Search

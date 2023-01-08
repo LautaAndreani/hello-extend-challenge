@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         red: '#EE4957',
         brand: '#0794E3',
+        hover: '#0472b0',
       },
     },
   },

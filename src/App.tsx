@@ -30,7 +30,11 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (favorites.length) return localStorage.setItem('favorites', JSON.stringify(favorites))
+    localStorage.setItem('favorites', JSON.stringify(favorites))
+
+    return () => {
+      localStorage.clear()
+    }
   }, [favorites])
 
   return (
